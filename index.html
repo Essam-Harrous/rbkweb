@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>web 1</title>
+	</head>
+	<body id = "target">
+		<button id= "beeperOne">Beeper</button>
+		<button class = "beeperTwo">Beeper 2</button>
+		<button class = "beeperThree">Beerper 3</button>
+		<div></div>
+		<p id = "output">HEY</p>
+		<input id = "color"></input>
+		<button id = "go">Click Me</button>
+		<br>
+		<img id='image'/>
+
+		<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+		<script>
+		$('button#go').on('click', function(){ $('p#output').text( $('input#color').val() ).css('color', 'red'); });
+		</script>
+		<script src='main.js'></script>
+
+	</body>
+</html>
